@@ -1,0 +1,235 @@
+.gig-preview {
+  background-color: #fff;
+  font-family: Macan-Regular;
+  border: 1px solid #e4e5e7;
+  color: $clr1;
+  transition: all 0.3s;
+  &:hover {
+    color: $clr-main;
+  }
+  .gig-preview-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    height: 65%;
+    .gig-preview-title {
+      font-family: Macan-Regular;
+      display: flex;
+      font-size: em(14px);
+      flex-grow: 1;
+      max-height: 4em;
+      line-height: em(18.5px);
+      cursor: pointer;
+    }
+  }
+  img {
+    aspect-ratio: 1;
+    border-radius: 50%;
+  }
+  .gig-preview-rate {
+    font-family: Macan-Bold;
+    color: $clr-progress-bar;
+    font-size: em(13px);
+  }
+
+  .card-info {
+    margin-left: 0.5em;
+    height: 7.9em;
+  }
+
+  .gig-preview-price {
+    display: flex;
+    justify-content: flex-end;
+    font-family: Macan-Regular;
+    color: $clr4;
+    align-items: center;
+    height: 25px;
+    border-top: 0.0625em solid #e4e5e7;
+    padding: 0.625em 0.75em;
+    height: 2.5em;
+  }
+  .txt-capitalized {
+    font-family: Macan-Bold;
+    text-transform: uppercase;
+    color: $clr2;
+    padding: 0;
+    font-size: em(10px);
+  }
+}
+.gig-span-price {
+  margin-left: 0.5rem;
+}
+
+.seller-container {
+  display: flex;
+  margin-top: 0.5rem;
+  line-height: 0.5rem;
+  font-family: Macan-Regular;
+  align-items: center;
+  gap: 0.5rem;
+  .seller-img {
+    height: 30px;
+    margin-top: em(5px);
+  }
+  .seller-info {
+    display: flex;
+    flex-direction: column;
+    gap: em(7px);
+    .seller-name {
+      color: $clr1;
+      font-family: Macan-Regular;
+      font-size: 0.9rem;
+    }
+    p {
+      font-size: 0.8rem;
+      color: $clr2;
+    }
+    .seller-rate {
+      font-size: em(12px);
+      color: $clr2;
+    }
+  }
+}
+
+.gig-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  padding-bottom: 3px;
+  margin-top: 0.5em;
+}
+
+.total-rates {
+  margin-left: 0.2rem;
+  font-family: Macan-Regular;
+  color: $clr12;
+  font-size: em(14px);
+}
+
+.vueperslides__parallax-wrapper {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 61.8% !important;
+}
+.vueperslides {
+  position: relative;
+
+  .vueperslides__arrow {
+    width: 25px;
+    padding: 0.2em 0.1em;
+    transition: all 0.3s;
+    & svg {
+      width: 1.6em;
+      height: 1.4em;
+      vertical-align: middle;
+      stroke: currentColor;
+      fill: none;
+      padding: 0.3em 0;
+      stroke-width: 2;
+      color: transparent;
+    }
+  }
+  .vueperslides__arrow--prev {
+    border-radius: 0 50px 50px 0;
+    & svg {
+      width: 1em;
+    }
+  }
+
+  .vueperslides__arrow--next {
+    border-radius: 50px 0 0 50px;
+  }
+
+  &:hover .vueperslides__arrow {
+    margin: 0 -9px;
+    background-color: #ffffff;
+    opacity: 1;
+    border: 1px solid rgba(126, 125, 125, 0.6);
+    & svg {
+      color: rgba(99, 97, 97, 0.828);
+    }
+  }
+  .vueperslides__arrow--prev {
+    border-radius: 0 50px 50px 0;
+
+    & svg {
+      width: 1em;
+    }
+    .vueperslides__arrow--next {
+      border-radius: 50px 0 0 50px;
+    }
+  }
+}
+
+.vueperslides__inner {
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.vueperslides__parallax-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.vueperslides__bullets {
+  padding-bottom: 7px;
+}
+
+.vueperslides__bullet {
+  margin: 0.6em 0.2em;
+  padding: 0;
+  border: none;
+  background: none;
+}
+.vueperslides__bullet .default {
+  width: em(8px);
+  height: em(8px);
+  border-radius: em(8px);
+  border: em(1px) solid currentColor;
+  background-color: #fafafa;
+  box-shadow: 0 0 1px #00000080, 0 0 3px #0000004d;
+  transition: 0.4s ease-in-out;
+  box-sizing: border-box;
+}
+.vueperslides__bullet--active .default {
+  width: em(12px);
+  height: em(12px);
+  border-radius: em(12px);
+}
+
+.icon-heart {
+  display: flex;
+  margin-right: auto;
+  cursor: pointer;
+  svg {
+    width: em(20px);
+    height: em(17px);
+    fill: $clr12;
+    stroke: $clr2;
+    stroke-width: 1;
+    transition: all 0.3s;
+  }
+}
+
+.long-txt {
+  max-width: em(300px);
+}
+
+.hover-txt {
+  transition: all 0.3s;
+  color: $clr-main;
+}
+
+.gig-seller-btns {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .seller-img {
+    img {
+      width: 100%;
+      aspect-ratio: 1 !important;
+    }
+  }
+}

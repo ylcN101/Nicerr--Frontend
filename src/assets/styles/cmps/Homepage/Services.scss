@@ -1,0 +1,126 @@
+.popular-services-section {
+  .vueperslides__track {
+    cursor: default !important;
+  }
+
+  margin-bottom: 96px;
+
+  .services {
+    .vueperslide--visible {
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        opacity: 0.85;
+      }
+
+      border-radius: 4px;
+      width: 17.85% !important;
+      // height: 345px;
+    }
+
+    .vueperslides__arrow {
+      svg {
+        height: 25px;
+        width: 25px;
+        stroke-width: 3px !important;
+        color: #555555;
+      }
+
+      background-color: #fff;
+      border: 0;
+      opacity: 1;
+      -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+      font-size: 16px;
+      height: 48px;
+      line-height: 100%;
+      margin: 0 32px;
+      border-radius: 50%;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      width: 48px;
+      z-index: 4;
+    }
+
+    .vueperslide--visible,
+    .vueperslide__active {
+      margin-right: 2.69% !important;
+    }
+
+    .vueperslide__content-wrapper {
+      @include for-tablet-layout{
+        min-width: 217px;
+      }
+
+      @include for-mobile-layout {
+        min-width: 310px;
+      }
+ 
+
+      .vueperslide__title {
+        height: 20px;
+        font-size: 14px;
+      }
+
+      .vueperslide__content {
+        font-family: 'Macan-Bold';
+        font-size: 22px;
+        letter-spacing: 1px;
+      }
+
+      color: white;
+      justify-content: flex-start;
+      align-items: baseline;
+      margin: 16px 0px 0px 16px;
+    }
+
+    .vueperslides__bullets {
+      display: none;
+    }
+
+    .vueperslide {
+      @include for-tablet-layout {
+        width: fit-content !important;
+      }
+      width: auto;
+
+      &:hover {
+        text-decoration: none !important;
+      }
+    }
+
+    .vueperslides__parallax-wrapper {
+      @include for-tablet-layout{
+        height: 350px;
+      }
+      @include for-mobile-layout {
+        height: 400px;
+      }
+      padding-bottom: 25% !important;
+    }
+  }
+
+  h2 {
+    padding-bottom: 24px;
+    line-height: 120%;
+    letter-spacing: 0.2px;
+    color: $clr4;
+    align-self: baseline;
+    font-size: 32px;
+  }
+
+  img {
+    border-radius: 4px;
+    width: 254px;
+    object-fit: cover;
+    // height: 345px;
+  }
+
+  grid-column: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-content: center;
+}

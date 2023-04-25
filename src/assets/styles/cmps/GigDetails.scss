@@ -1,0 +1,63 @@
+.gig-details-main {
+
+
+    .details-nav {
+        border-bottom: 1px solid $clr10;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: $clr6;
+
+        .details-router {
+            font-family: 'Macan-Bold';
+            font-size: em(12px);
+            line-height: em(62px);
+            gap: em(28px);
+            cursor: pointer;
+
+            @include for-mobile-layout {
+                font-size: em(11.5px);
+            }
+
+            li {
+                &.selected {
+                    box-shadow: 0 -4px #1dbf73 inset;
+                }
+            }
+
+        }
+    }
+
+    .gig-details {
+        grid-column: 2;
+        scroll-behavior: smooth;
+
+        font-family: 'Macan-Regular';
+        font-size: rem(14px);
+        line-height: 140%;
+        word-break: break-word;
+
+        color: $clr1;
+
+        margin-block-start: em(32px);
+
+        @include for-mobile-layout {
+            flex-wrap: wrap;
+        }
+    }
+
+
+}
+
+.type-tag {
+    transition: all 0.3s;
+    border-bottom: 1px solid #e4e5e7;
+    border-top: 1px solid #e4e5e7;
+
+}
+
+//Gig-User-Info
+@import '../cmps/GigDetailsUserInfo.scss';
+
+//Gig-Purchase
+@import '../cmps/GigDetailsPurchase.scss';

@@ -1,0 +1,256 @@
+.seller-profile-img {
+  position: relative;
+  .img-uploader{
+    input{
+      display: none;
+    }
+    top: 1px;
+    position: absolute;
+  }
+  img {
+    border-radius: 50%;
+  }
+  height: 160px;
+
+  width: 160px;
+}
+
+.seller-profile {
+  padding: 40px 0px;
+  background-color: #f7f7f7;
+}
+
+.seller-profile-gig {
+  background-color: white;
+}
+
+
+.seller-profile-gigs {
+  width: 100%;
+  margin-bottom: 40px;
+  h4 {
+    font-size: 16px;
+    color: $clr1;
+    background-color: #fff;
+    width: 100%;
+    height: 60px;
+    border: 1px solid $clr9;
+    margin-bottom: 40px;
+    padding: 23px 25px;
+  }
+}
+
+.add-gig-container {
+  @include for-mobile-layout{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    min-height: auto;
+  }
+  p {
+    color: $clr4;
+    font-size: 16px;
+  }
+  cursor: pointer;
+  span {
+    color: #fff;
+    width: 65px;
+    height: 65px;
+    background-color: #78cdd2;
+    font-size: 3rem;
+    border-radius: 10.4375em;
+    line-height: 70px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: #fff;
+  min-height: 280px;
+  border: 1px solid $clr9;
+}
+
+.seller {
+  @include for-mobile-layout{
+    min-width: auto;
+    max-width: auto;
+    width: 100%;
+  }
+  min-width: 398px;
+  max-width: 398px;
+  width: 28%;
+  .desc-container {
+    height: fit-content;
+    .desc {
+      h4 {
+        margin-bottom: 20px;
+        font-size: 18.5px;
+      }
+      p {
+        font-size: 16px;
+        color: $clr1;
+      }
+    }
+    border: 1px solid $clr9;
+    h4 {
+      color: $clr1;
+    }
+    padding: 30px;
+    background-color: white;
+  }
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.svg-info {
+  h4 {
+    font-size: 16px;
+  }
+
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.details {
+  span {
+    font-size: 16px;
+    color: $clr3;
+  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.seller-profile-container {
+  @include for-mobile-layout{
+    flex-direction: column;
+  }
+  .user-info {
+    height: 363px;
+    border: 1px solid $clr9;
+    padding: 26px;
+    background-color: white;
+    .seller-profile-info {
+      text-align: center;
+      .details-container {
+        display: flex;
+        flex-direction: column;
+        span {
+          font-weight: bold;
+        }
+
+        margin-top: 24px;
+        padding-top: 13px;
+        width: 100%;
+        h4 {
+          margin: 0;
+          font-weight: 200;
+          padding: 10px;
+          display: flex;
+          justify-content: space-between;
+        }
+        border-top: 1px solid rgb(195, 195, 195);
+      }
+      gap: 35px;
+      h2 {
+        color: $clr4;
+      }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    // justify-content: space-between;
+  }
+  .seller-profile {
+    display: flex;
+    flex-direction: column;
+  }
+  grid-column: 2/ 3;
+  @include for-wide-layout{
+    gap: 2%;
+  }
+  gap: 13%;
+}
+.gigs-list-seller {
+  @include for-wide-layout{
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+
+  gap: 20px;
+  padding: 0;
+}
+
+.gigs-not-seller{
+  .seller{
+    @include for-mobile-layout{
+      width: auto;
+    }
+    max-width: 500px;
+    width: 40%;
+  }
+  justify-content: center;
+
+}
+
+.gig-preview-seller {
+  transition: all 0.3s;
+  &:hover .gig-seller-btns {
+    transition: all 0.3s;
+    opacity: 1;
+  }
+  .gig-seller-btns {
+    opacity: 0;
+    .icon {
+      padding-top: 2px;
+    }
+    cursor: pointer;
+    gap: 6px;
+    display: flex;
+    align-items: center;
+  }
+  .card-info {
+    height: 5.2em;
+    padding: 5px;
+  }
+  .gig-preview-price {
+    display: flex;
+    justify-content: space-between;
+    border: 0;
+    padding: 0.625em 0.75em;
+    max-height: 40px;
+  }
+  .gig-preview-info {
+    margin-top: 0.8rem;
+  }
+  display: flex;
+  flex-direction: column;
+  .seller-img {
+    display: none;
+  }
+  .seller-info {
+    display: none;
+  }
+  .txt-capitalized {
+    font-size: 10px;
+  }
+  .icon-heart {
+    display: none;
+  }
+  .gig-rating {
+    display: none;
+  }
+
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--yro5245);
+  // margin-bottom: 30px;
+}

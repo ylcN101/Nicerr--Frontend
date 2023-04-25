@@ -19,7 +19,7 @@
 
 ## Features
 - We used **Web sockets** to ensure that our users are updated in real time: notification to the seller when a user views his product, update to the seller when an order is placed, and update to the buyer when an order status changes. 
-- Processes for **authentication**, as well as the ability to connect through **Google Login**.
+- Processes for **authentication**, as well as the ability to connect .
 - **Full CRUDL** - registration as a seller, publishing new products, editing, deleting.
 - **Vueper Slides** library for an impressive display of all the photos, **Element Plus** library and more.
   <br/>

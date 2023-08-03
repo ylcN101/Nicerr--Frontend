@@ -1,6 +1,6 @@
 
 <br />
-Link to Backend repository: <a href="https://github.com/ylcN101/Nicer---Backend">Backend repository</a>
+Link to Backend repository: <a href="https://github.com/ylcN101/Nicer---Backend">Backend</a>
 <div align="center">
   <br />
   <a href="https://nicerr.onrender.com/">

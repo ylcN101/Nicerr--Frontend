@@ -1,6 +1,6 @@
 
 <br />
- <a href="https://github.com/ylcN101/Nicer---Backend">Backend repo</a>.
+Link to Backend repository: <a href="https://github.com/ylcN101/Nicer---Backend">Backend repository</a>
 <div align="center">
   <a href="https://nicerr.onrender.com/">
     <img src="https://res.cloudinary.com/dezqiqsqb/image/upload/v1682432814/Nicer-DemoPic_bop79m.png" alt="Logo">
